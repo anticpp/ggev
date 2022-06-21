@@ -10,21 +10,8 @@ ggev init
 
 # Usage
 
-
 ```
-        -------------------------------(commit -p)--------------------------
-        |                                                                  |
-        |   ----------------(commit)------     -------(push)--------       |
-        |   |                            |     |                   |       |
-        |   |                           \|/    |                  \|/     \|/
-       |-----------|                    |-----------|             |------------|
-       |local-files| <=====(diff)====>  |local-repos|             |remote-repos|
-       |-----------|                    |-----------|             |------------|
-       /|\ /|\                           |    /|\                  |       |
-        |   |                            |     |                   |       |
-        |   -------(update)---------------     -------(fetch)-------       |
-        |                                                                  |
-        ----------------------------------(pull)----------------------------
+ggev sync
 ```
 
 # TODO
@@ -32,5 +19,4 @@ ggev init
 - [X] Use `gem`
 - [X] Command `init`
 - [X] Reconstruct command dispatcher
-- [ ] New workflow commit/push/update/fetch/diff
 - [ ] Configure github action to publish rubygem
